@@ -1,5 +1,7 @@
 ﻿#pragma strict
 public var completedTutorial = false;
+public var mainMenu : GameObject;
+public var optionsMenu : GameObject;
 
 function Start () {
 
@@ -20,4 +22,14 @@ function playGame(){
 
 function quitGame(){
     Application.Quit();
+}
+
+function backToMainMenu(){
+    mainMenu.SetActive(true);
+    optionsMenu.SetActive(false);
+}
+
+function optionsmenu(){
+    mainMenu.SetActive(false);
+    optionsMenu.SetActive(true);
 }
