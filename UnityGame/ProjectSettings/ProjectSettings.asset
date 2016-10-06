@@ -182,6 +182,7 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 128
       m_Height: 128
+<<<<<<< HEAD
   m_BuildTargetBatching:
   - m_BuildTarget: Web
     m_StaticBatching: 1
@@ -196,6 +197,10 @@ PlayerSettings:
   - m_BuildTarget: WindowsStandaloneSupport
     m_APIs: 0200000001000000
     m_Automatic: 0
+=======
+  m_BuildTargetBatching: []
+  m_BuildTargetGraphicsAPIs: []
+>>>>>>> origin/beta
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiUTitleID: 0005000011000000
@@ -559,6 +564,6 @@ PlayerSettings:
   iOS::VR::enabledDevices: []
   tvOS::VR::enabledDevices: []
   cloudProjectId: 163e0841-e2c4-4dc3-b305-d7e1a6877539
-  projectName: UnityGame
+  projectName: Time Glitch
   organizationId: joseph-miller-32e8f469-32b4-4be5-856c-a167544e9c64
   cloudEnabled: 0
