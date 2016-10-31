@@ -4,14 +4,14 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  productGUID: 0086036c33305704294abb2f69fd081d
+  productGUID: 11b346bceada25b44acc770b3b5a6ae7
   AndroidProfiler: 0
-  defaultScreenOrientation: 2
+  defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: 2013_10 - Sample Assets
+  productName: UnityGame
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
@@ -41,7 +41,7 @@ PlayerSettings:
   disableDepthAndStencilBuffers: 0
   defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
-  runInBackground: 1
+  runInBackground: 0
   captureSingleScreen: 0
   Override IPod Music: 0
   Prepare IOS For Recording: 0
@@ -93,7 +93,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.unity.sampleassets
+  bundleIdentifier: com.Company.ProductName
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -119,7 +119,7 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iPhoneTargetOSVersion: 22
+  iPhoneTargetOSVersion: 24
   tvOSSdkVersion: 0
   tvOSTargetOSVersion: 900
   uIPrerenderedIcon: 0
@@ -147,8 +147,8 @@ PlayerSettings:
   iOSLaunchScreenLandscape: {fileID: 0}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
-    rgba: 4294967040
-  iOSLaunchScreenFillPct: 1
+    rgba: 0
+  iOSLaunchScreenFillPct: 100
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
   iOSLaunchScreeniPadType: 0
@@ -175,32 +175,9 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - serializedVersion: 2
-      m_Icon: {fileID: 0}
-      m_Width: 128
-      m_Height: 128
-<<<<<<< HEAD
-  m_BuildTargetBatching:
-  - m_BuildTarget: Web
-    m_StaticBatching: 1
-    m_DynamicBatching: 1
-  m_BuildTargetGraphicsAPIs:
-  - m_BuildTarget: AndroidPlayer
-    m_APIs: 08000000
-    m_Automatic: 0
-  - m_BuildTarget: LinuxStandaloneSupport
-    m_APIs: 0000000011000000
-    m_Automatic: 0
-  - m_BuildTarget: WindowsStandaloneSupport
-    m_APIs: 0200000001000000
-    m_Automatic: 0
-=======
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
->>>>>>> origin/beta
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiUTitleID: 0005000011000000
@@ -240,7 +217,7 @@ PlayerSettings:
   ps3ThumbnailPath: 
   ps3BackgroundPath: 
   ps3SoundPath: 
-  ps3NPAgeRating: -1
+  ps3NPAgeRating: 12
   ps3TrophyCommId: 
   ps3NpCommunicationPassphrase: 
   ps3TrophyPackagePath: 
@@ -326,7 +303,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: 2nh1Eor4ovj51YmEilItxJdcQQtokAsb
+  psp2PackagePassword: F69AzBlax3CF3EDNhm3soLBPh71Yexui
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -363,16 +340,17 @@ PlayerSettings:
     2: CROSS_PLATFORM_INPUT
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    15: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    16: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-  metroPackageName: 2013_10 - Sample Assets
+    14: MOBILE_INPUT
+    17: MOBILE_INPUT
+    20: MOBILE_INPUT
+  metroPackageName: UnityGame
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: 2013_10 - Sample Assets
+  metroApplicationDescription: UnityGame
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -382,8 +360,9 @@ PlayerSettings:
   metroWideTileShowName: 0
   metroDefaultTileSize: 1
   metroTileForegroundText: 1
-  metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
+  metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628,
+    a: 1}
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities: {}
   metroFTAName: 
@@ -426,39 +405,17 @@ PlayerSettings:
   XboxOneDescription: 
   XboxOneIsContentPackage: 0
   XboxOneEnableGPUVariability: 0
-  XboxOneSockets:
-    Unity Internal - Mono async-IO:
-      m_Name: Unity Internal - Mono async-IO
-      m_Port: 0
-      m_Protocol: 0
-      m_Usages: 0000000001000000
-      m_TemplateName: 
-      m_SessionRequirment: 0
-      m_DeviceUsages: 
+  XboxOneSockets: {}
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
   - Android::ScriptingBackend
-  - Metro::ScriptingBackend
   - Standalone::ScriptingBackend
-  - WP8::ScriptingBackend
-  - WebGL::ScriptingBackend
-  - WebGL::audioCompressionFormat
-  - WebGL::exceptionSupport
-  - WebGL::memorySize
-  - iOS::Architecture
-  - iOS::ScriptingBackend
+  - WebPlayer::ScriptingBackend
   Android::ScriptingBackend: 0
-  Metro::ScriptingBackend: 2
   Standalone::ScriptingBackend: 0
-  WP8::ScriptingBackend: 2
-  WebGL::ScriptingBackend: 1
-  WebGL::audioCompressionFormat: 4
-  WebGL::exceptionSupport: 0
-  WebGL::memorySize: 256
-  iOS::Architecture: 2
-  iOS::ScriptingBackend: 0
+  WebPlayer::ScriptingBackend: 0
   boolPropertyNames:
   - Android::VR::enable
   - Metro::VR::enable
@@ -471,13 +428,11 @@ PlayerSettings:
   - Standalone::VR::enable
   - Tizen::VR::enable
   - WebGL::VR::enable
-  - WebGL::analyzeBuildSize
-  - WebGL::dataCaching
-  - WebGL::useEmbeddedResources
   - WebPlayer::VR::enable
   - WiiU::VR::enable
   - Xbox360::VR::enable
   - XboxOne::VR::enable
+  - XboxOne::enus
   - iOS::VR::enable
   - tvOS::VR::enable
   Android::VR::enable: 0
@@ -491,13 +446,11 @@ PlayerSettings:
   Standalone::VR::enable: 0
   Tizen::VR::enable: 0
   WebGL::VR::enable: 0
-  WebGL::analyzeBuildSize: 0
-  WebGL::dataCaching: 0
-  WebGL::useEmbeddedResources: 0
   WebPlayer::VR::enable: 0
   WiiU::VR::enable: 0
   Xbox360::VR::enable: 0
   XboxOne::VR::enable: 0
+  XboxOne::enus: 1
   iOS::VR::enable: 0
   tvOS::VR::enable: 0
   stringPropertyNames:
@@ -510,21 +463,15 @@ PlayerSettings:
   - Purchasing_ServiceEnabled::Purchasing_ServiceEnabled
   - UNet_ServiceEnabled::UNet_ServiceEnabled
   - Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled
-  - WebGL::emscriptenArgs
-  - WebGL::template
-  - additionalIl2CppArgs::additionalIl2CppArgs
   Analytics_ServiceEnabled::Analytics_ServiceEnabled: False
-  Build_ServiceEnabled::Build_ServiceEnabled: False
+  Build_ServiceEnabled::Build_ServiceEnabled: True
   Collab_ServiceEnabled::Collab_ServiceEnabled: False
   ErrorHub_ServiceEnabled::ErrorHub_ServiceEnabled: False
   Game_Performance_ServiceEnabled::Game_Performance_ServiceEnabled: False
   Hub_ServiceEnabled::Hub_ServiceEnabled: False
   Purchasing_ServiceEnabled::Purchasing_ServiceEnabled: False
-  UNet_ServiceEnabled::UNet_ServiceEnabled: False
+  UNet_ServiceEnabled::UNet_ServiceEnabled: True
   Unity_Ads_ServiceEnabled::Unity_Ads_ServiceEnabled: False
-  WebGL::emscriptenArgs: 
-  WebGL::template: APPLICATION:Default
-  additionalIl2CppArgs::additionalIl2CppArgs: 
   vectorPropertyNames:
   - Android::VR::enabledDevices
   - Metro::VR::enabledDevices
@@ -565,5 +512,5 @@ PlayerSettings:
   tvOS::VR::enabledDevices: []
   cloudProjectId: 163e0841-e2c4-4dc3-b305-d7e1a6877539
   projectName: Time Glitch
-  organizationId: joseph-miller-32e8f469-32b4-4be5-856c-a167544e9c64
+  organizationId: amphi-web-3
   cloudEnabled: 0
