@@ -3,8 +3,11 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/launcher.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0
 - path: Assets/joey scene.unity
   isLoaded: 0
   isActive: 0
+- path: Assets/Elizabeth scene.unity
+  isLoaded: 1
+  isActive: 1
