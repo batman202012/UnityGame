@@ -2,12 +2,6 @@ sceneSetups:
 - path: Assets/tutorial.unity
   isLoaded: 0
   isActive: 0
-- path: Assets/launcher.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/joey scene.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Elizabeth scene.unity
+- path: Assets/statTest.unity
   isLoaded: 1
   isActive: 1
