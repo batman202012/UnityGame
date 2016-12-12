@@ -25,11 +25,12 @@ function Update(){
 
 }
 
-/*function OnTriggerEnter (player : Collider) {
-    if(player.name == "FPSController"){
-        
+function OnTriggerEnter (other : Collider) {
+    if(other.name == "bullet(Clone)"){
+        Destroy(GameObject.Find("bullet(Clone)"));
+        ApplyDamage(500);
     }
-}*/
+}
 
 function ApplyDamage(damageRate){
     miss1 = Random.Range(0,101);
@@ -52,4 +53,5 @@ function ApplyDamage(damageRate){
                 Destroy(enemy);
             }
     }
+    print(damage);
 }
