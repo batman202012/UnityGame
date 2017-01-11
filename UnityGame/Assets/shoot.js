@@ -1,18 +1,20 @@
 ﻿#pragma strict
 public var target : Transform;
 public var player : Transform;
-var playerPos : Vector3;
-var targetPos : Vector3;
+private var playerPos : Vector3;
+private var targetPos : Vector3;
 var changePos : Vector3;
 public var speed : int;
 
 
 function Start () {
-    targetPos = target.position;
+    /*targetPos = target.position;
     playerPos = player.position;
     changePos = targetPos - playerPos;
     changePos = changePos * speed;
-    GetComponent.<Rigidbody>().velocity = changePos;
+    print(changePos);
+    GetComponent.<Rigidbody>().velocity = changePos;*/
+    GetComponent.<Rigidbody>().velocity = Vector3(0, 0, 200);
     yield WaitForSecondsRealtime (10);
 }
 

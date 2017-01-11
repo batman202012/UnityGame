@@ -1,13 +1,14 @@
 ﻿#pragma strict
 public var health : float;
 public var damageReduction : float;
-public var missChance : float;
+public var missChance : float[];
+private var missChance1 : float;
 public var absorbtionChance : float;
-var miss : boolean;
-var miss1 : float;
-var absorb : boolean;
-var absorb1 : float;
-var damage : float;
+private var miss : boolean;
+private var miss1 : float;
+private var absorb : boolean;
+private var absorb1 : float;
+private var damage : float;
 
 var player : GameObject;
 var other : GameObject;
@@ -26,15 +27,24 @@ function Update(){
 }
 
 function OnTriggerEnter (other : Collider) {
-    if(other.name == "bullet(Clone)"){
-        Destroy(GameObject.Find("bullet(Clone)"));
-        ApplyDamage(500);
+    if(other.name == "pistol Bullet(Clone)"){
+        Destroy(GameObject.Find("pistol Bullet(Clone)"));
+        missChance1 = missChance[0];
+        ApplyDamage(90);
+    }
+    else if(other.name == "shotgun Bullet(Clone)"){
+        Destroy(GameObject.Find("shotgun Bullet(Clone)"));
+        missChance1 = missChance[1];
+        ApplyDamage(250);
     }
 }
 
 function ApplyDamage(damageRate){
+    if(!missChance1){
+        missChance1 = 0f;
+    }
     miss1 = Random.Range(0,101);
-    if(miss1<=missChance){
+    if(miss1<=missChance1){
         miss=true;
     }
     else{
