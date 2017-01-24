@@ -9,12 +9,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     {
         public NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
-        public Transform target; // target to aim for
+        public Transform target;                                    // target to aim for
 
 
         private void Start()
         {
-            target = GameObject.FindWithTag("target").transform;
             // get the components on the object we need ( should not be null due to require component so no need to check )
             agent = GetComponentInChildren<NavMeshAgent>();
             character = GetComponent<ThirdPersonCharacter>();
