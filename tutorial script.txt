@@ -1,0 +1,29 @@
+Narrator: Hello foreign body, now you may be wondering where you are. The answer to that is simple, you're in P.A.R.H.A.M's starting protocol system, making sure everything is properly working.
+*instructions to move forward show on screen*
+Narrator: Move forward
+*player moves forward*
+Narrator: Good
+*instructions to move backward show on screen*
+Narrator: Move backward
+*instructions to move left show on screen*
+Narrator: Move left
+*instructions to move right show on screen*
+Narrator: Move right
+*completes all of these*
+*instructions to sprint show on screen*
+Narrator: Please run to the end of the corridor
+*complete that*
+Narrator: Good,that concludes the required physical movement protocols.
+*instructions to open door*
+Narrator: Now find the door and open it.
+*player opens door and it falls down*
+Narrator: Congratulations, you have broken the door, please procede to the other side.
+Narrator: Please procede to the base of the stairs and jump up the stairs.
+*Shows how to jump*
+*reaches other side of stairs*
+*Shows instructions of how to fight*
+Narrator: Don't be hasty, you are now in combat. Now don't die.
+*enemy spawns in front of player*
+*player kills enemy*
+Narrator: Good, you can listen. That is the end of P.A.R.H.A.M's starting protocol system. Goodbye forever.
+*walls crush player, player goes to next level*
