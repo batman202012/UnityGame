@@ -29,3 +29,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+#Delete on whether or not it updates contantly
+*.unity
+*.controller
