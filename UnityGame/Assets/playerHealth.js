@@ -1,9 +1,11 @@
 ﻿#pragma strict
-public var health : float;
+public var maxHealth : float;
 public var damageReduction : float;
 public var missChance : float;
 public var absorbtionChance : float;
 public var stunTime : float;
+public var text : UI.Text;
+private var health : float = maxHealth;
 private var miss : boolean;
 private var miss1 : float;
 private var absorb : boolean;
@@ -35,6 +37,8 @@ function ApplyDamage(damageRate){
         damage = damageRate;
         damage = damage - (damage * damageReduction);
         health = health - damage;
+        print((health/maxHealth).ToString());
+        text.text = (health/maxHealth).ToString();
         if(health<=0){
             //death
             Destroy(gameObject);

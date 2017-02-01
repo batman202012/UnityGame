@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/joey scene.unity
+- path: Assets/statTest.unity
   isLoaded: 1
   isActive: 1

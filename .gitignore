@@ -32,4 +32,8 @@ sysinfo.txt
 
 #Delete on whether or not it updates contantly
 *.unity
+<<<<<<< HEAD
 *.controller
+=======
+*.controller
+>>>>>>> 7f169c7ffb640982852712ddf1aa3c2556ab3cb5
